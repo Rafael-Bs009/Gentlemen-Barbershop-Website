@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentleman BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/Barbershop-Logo.png" alt="logo barbearia"/> 
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#local-sobre" class="scroll-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#local-servicos" class="scroll-link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#local-preco" class="scroll-link">Preços</a>
+                    </li>
+                    <li>
+                        <a href="#local-contatos" class="scroll-link">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container sobre">
+            <picture>
+                <img src="./img/barbershop-loja.jpg" alt="Por dentro da loja">
+            </picture>
+            <div>
+                <h2 id="local-sobre">Sobre a Barbearia</h2>
+                <p>
+                    Bem-vindo à Gentlemen Barbershop, a barbearia clássica localizada no coração de São Paulo, capital. Fundada em 2024, nossa barbearia traz de volta a essência do atendimento old school, onde cada cliente é tratado com a máxima atenção e respeito. Aqui, nossa paixão é manter vivas as tradições do corte clássico e do barbear tradicional, garantindo um serviço que reflete autenticidade e qualidade.
+                </p>
+            </div>
+        </div>
+    </main>
+    <section class="container servicos-list">
+        <h2 id="local-servicos">Serviços</h2>
+        <div class="servicos">
+            <article class="servico">
+                <img src="./img/corte-barbershop.jpg" alt="corte de cabelo">
+                <h3>Corte de Cabelo</h3>
+                <p>Cortes clássicos personalizados ao seu estilo, realizados com precisão e expertise.</p>
+                <button type="button" class="btn-servico">Agendar</button>
+            </article>
+            <article class="servico">
+                <img src="./img/barbear-barbershop.jpg" alt="Fazendo a barba">
+                <h3>Barba</h3>
+                <p>Vivencie a arte do barbear com toalhas quentes e espuma, garantindo um visual nítido e polido.</p>
+                <button type="button" class="btn-servico">Agendar</button>
+            </article>
+            <article class="servico">
+                <img src="./img/acabamento-barbershop.jpg" alt="Fazendo acabamento do cabelo">
+                <h3>Acabamento</h3>
+                <p>De limpezas de pescoço a detalhes minuciosos, nossos acabamentos refinam seu estilo.</p>
+                <button type="button" class="btn-servico">Agendar</button>
+            </article>
+            <article class="servico">
+                <img src="./img/penteado-barbershop.jpg" alt="Penteando cabelo">
+                <h3>Penteado</h3>
+                <p>Utilizando pomadas premium e finalizando com um toque de laquê, conquiste um penteado refinado.</p>
+                <button type="button" class="btn-servico">Agendar</button>
+            </article>
+        </div>
+    </section>
+    <section class="container precos-list">
+        <h2 id="local-preco">Preços</h2>
+        <div class="precos-container">
+            <div class="precos">
+                <article class="preco">
+                    <picture class="icon">
+                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/barbershop.png" alt="barbershop"/>
+                    </picture>
+                    <div class="text">
+                        <h3>Corte de Cabelo Completo:</h3>
+                        <p>Utilização de máquina e tesoura para um corte completo e preciso.</p>
+                        <div class="valor">
+                            <strong>R$ 50.00</strong>
+                        </div>
+                    </div>
+                </article>
+                <article class="preco">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABk0lEQVR4nO2Zu0oDQRRAT5PORIzYKVprKXbaaxcIsVbBXzB+gqCltqJgZ6nGD0gEIYWlaQSNpYVgEZtgZGAiy5IN2eyO907YAxdmZofhHuaxwy5kZKjnAagnqKuhZ2Pcuhq8FWkEkglGn1HrwagjQMeBSAcB3hyIvCJAMyKZdWAjRj0YTQmRWkQySeJOQuTSgciFhMiJA5FjCZGqA5EDCZFdByI7EiIZ2lhysLQWJURywHeKEuZ6YsYU4TZFkRsEWQW6KUh07ViinKYgYsYQZyUFkWUUkEtBRGyTh0kqoobeJIu0gTKQt1ECWr6JtIHigH4z9pk3IuUhfSs+ieSH9C34JNJn/q8EC4GydyI1K2DifoT+4kQlFrddnEyEbEb+9/h9D70kDdM+7ZGSbd+yAiY2bdu2TyItex0JMxuaJXUiPxH3rYp9kxfsTAySUCXykeAK/4UiGglEnlFENYHIGYooAp9jSJi9tYYy9sYQuUIpRzEknoApFLM/wjK7tkeyeuaAQ+DRSpmP3S/Auf2jmzHx/AIL+Fay+jqZ3wAAAABJRU5ErkJggg==">
+                    </picture>
+                    <div class="text">
+                        <h3>Corte de Cabelo com Máquina:</h3>
+                        <p>Corte eficiente utilizando apenas máquina.</p>
+                        <div class="valor">
+                            <strong>R$ 35.00</strong>
+                        </div>
+                    </div>
+                </article>
+                <article class="preco">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADm0lEQVR4nNWZR2gWQRTHf/aaaBIVVOwQQSKCeFCjFy/2dhEUwYr1oiKi4CEWsID1oAcPCiIiopFosMWG2LCBGMWOwS4ao4kt6icvvJVl2P2+2c8YZ/8wh919b+b9Z968efMW3EMesBt4ASSAc8QQi4BvSsBrpcQI9YEtBgGvDSMmaADsDCFRSEzQGNgfQuIz0I0YoAlwKIREAiggBmgBnExC4inQHMfRCriQhEQCGIfjyAaupyBxDMeRCVxJQeIb0BOHIf5+NgUJaWtxPMQetSDxUlfNWRLFFiSkTazNgZsBU4F9wEOgAvgJvANuAjuA4ZpS2GCXJQlxu3oW/WUBg4DZwFbgFPAaOO0XGg+8shxYErmBKQZdZtlXNdDb0M0E+gMzgY3ACeB5kj4kU67BDOCX5cD+CDM2hISQ/GHZjySLgu66l55GtEPaKumgB/A1DeWEul7ngH1xz1Jf3KK16hWlacN5HbPG18yl3qhLm+XzzQHAJv3ul5d3fiyOYMR01RmRBoGPwEqgqTewOXuzUvj+HEP+ge9bW+CDpSGnNWhI8ng/AoE3wHLfJP9BlSHYMgWRDEP+qy/ibLc05i3QUXVWWOrc1UmWyBqIiohEMg35bfq+t+UGr9YQLhhsoVMCjLQJz6WGosToZJjrk5XzJUffJ0vLvSaRcZrKi15ZiFyFrm4fImBDwIxt0hCarTORo8+bjRmcr32M9r0TufyQcD3Fdx+5FCBzUYnK98joAlSmETVu6X27kREw8vX09cs+UzfySBw3VnWLloH+GhOA7xGJDFHdhRbRqZ3KdgCu6maXdGeoTkStYpDmUzYkDqpOG6A8iZwY29C3EpOBvhFytbRRT318nS7/E+C9btJKPYnvazqBRqwwEkV1YXBtIC/glPc3SUJjgWILF9zrejWkX4SgUOKyixUmSeSC3nvnjVPoFXB3ue07B+T7GeP7HRzEasNIiWqdAopwnww5797hDO4aBi4NkTNrWLk4hFzDuCpN64PwyJD10nYnMMow7kCIXFdjH5VbVknqDPMMInLVDEKBIXcYB//xJZLc19GU38y/JuEYxhgGvjaqKFLNOGLIPNZ7uVPI0HBr3uakErMEuPGvS6G1iQUR0pMi1za5CZtfBJddTxhTFRqqtXCQqhrjBMoCCOzR4oJcZ2ODSoPENWKKMoOI/KWNJQ4aRL4EVOVjgeEBe2QNMcWukB82sUNDYL3+RpC7R/v/ac1v22uWdxnYQb0AAAAASUVORK5CYII=">
+                    </picture>
+                    <div class="text">
+                        <h3>Corte de Cabelo com Tesoura:</h3>
+                        <p>Corte detalhado realizado exclusivamente com tesoura.</p>
+                        <div class="valor">
+                            <strong>R$ 60.00</strong>
+                        </div>
+                    </div>
+                </article>
+                <article class="preco">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADqklEQVR4nO2aaYiOURTHf4SmZD6IiSLM2JIkWRKyhOSDEmWXRLaQfUn2NWT4QpaUkgjZtylkmbGlyBLJvk9jJmRndOp/6/b2NLzzNu97Tf51u+ec57nvc/7Pc889594Z+I/yj0xgLnACeAF8UnsOHANmAnUJGPWBXcBPoPgP7QewHahNYBgCvJeT34ADQD+gHpCmZnJ/4BDwXfcWAH0IBNOBX3LsMFAn5vpF4EKMrZ6mXrG+4GhSjOEiYc5MAJoCa4Dq3j1uOjlkATuA5sA0jbep1pcUob2mkTkyQrb1cnpiCUQWSV8ofaz0z0BLkgyb87flwArPPlO2DSUQ2Sl9pGfLlu0GUIUkYokefAWo5Nn7yn68BCJ50rt4tsoiUQzMIUmoCXzQlGoLzAem6loLOXO/BCJvpbtcMk6to+yFMTFWZpinB1pyqwh8UbAbwaoi+M37Uj6RdC8ebGwtjbUXY8jRdUuoZYoKwCM9rIdsp6TbCmZ4KT0rgkhLyXekj5B+Unov6Y9FtMxgb/meHjZDtsnSd0s/J71nBJF+ko9I3yPdfsMwRfq9mNgrE/TQw96rxMiUXqSg3S59fAQRt6ply9FC6Y2ADE/vTZJwRA80pw13vZXIxdDaCCKbvDzTWfIDXdvqVQdJQ5aC3AK7HbBaTlg/SPLBCCI53htfKXkd0EpB/xVoTJKxSo5cA7p5QdxG8q0IIg8lWylz04slF1crSQGqab/hsvQ7ya1jllhHpJKqXnvzDfU1P6pgtOuvtTynBMM9J45587/AS3qOSJb6p8AYyae9lzGMFMLySq4ceeaVJ5cld/WI9FR/RvsVk/PV5+q3UgoXqM7hL9o8mTzKs49Tv0OZ3Nl/qtQJAm7pdO2GVxk722rvi/j3biEgZCghOuc+qd/r2fapdzHhkqiNDQoZqpVm6S2f9hKntaPAWWAbMFv3BkeiXKE7sF+brgHaCmeqtK+q5beDri3TgjCQwJCm0rs4zpavxBoMxpeChGtudxkEzidAxJJhMChMgIiNDQZF5YXI1QSIWF0WDJYnQGQpAaGZd5Adb7Mz4KBwrhQkbExwGFQKIjYmOFTRTvFvSbxK9oF1PFgcB5EFBIx0YKjOry4Bb7RjjCLShH8QHSKI2BY5SKTp/DdbpbodWNdQHHSKIHJdY4LDplKsWhsJDIMTyOxBLcFPEiBiG7JgcDMBInZ0FAwaeCft8bRT+teP4NAImKTjoDz9Ge6z2kvtBjfrfNgOsv+j3OI35jUwHnq5edoAAAAASUVORK5CYII=">
+                    </picture>
+                    <div class="text">
+                        <h3>Barba Completa:</h3>
+                        <p>Barbear com todos os procedimentos inclusos para um visual impecável.</p>
+                        <div class="valor">
+                            <strong>R$ 50.00</strong>
+                        </div>
+                    </div>
+                </article>
+                <article class="preco">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADFklEQVR4nO2aW4hNURjHf3PRiMSUJoaRKcolD0ZNQl7M5JK8SDPyQCmXl5Eo5VqKeFEKkQflYXInNIrIJTMuUyhyfRIx1BAzyBijVZ/arfacWWudM2fOXrN+9dVpn/2tvf7f3uvb39prQSAQCAQCAQ8YAqwCmoHl9COmAUeAb0CXWBswKebc6aaNbo001lf2FWgCjgLrgWpglNbPMSn8nwKD5byJwBk5vqsn8QXAxxwIQHfWCsySvi7t4dyrwF3gr3Z8Z6oAVOWAyFT2DiiUvh5wbOOHPBWx7MkBkalse6Svz+XYZRkeo4GGHvwbU4lXXNEcaukb1PieB2wEjgEPgS/ASPl/fKSPSvh/ymJEdwK3gAUmF36lOU8mN9lgEID3wEqgxKbhFi0AVs5Z5E6kjw0ShDLtCa53afiXFoAiepd92quvVRLda+CBZPKTwJKIz9iYzB5nO3I9AEXAJwMhHcCEiN82w4TplL9asjgElhkKOaz5vTD0m+rSqZdaI5X0HrcNRLQDpRGf2YbiOyOVoBVnY96b48gsg4DN2nXUmJ4CFAPl8lvV7hWab71hAJ64dm6x4QUybRcN+lYSk6O6M1UlOpEHXMuy+HbDp2yLRZs1pMEwqZyyIV5VdzMN+jTQcpIWzRtOFAArgJvyfs6kaDUZeQzstnjLrLFo/w2eUSCFkWkADuIZNZZPmJpEeUWzhfjvki+8odry7p/GM25YBsCrL8JzLMX/BobjEY2WAbiERyxyqC/66vNdxlHl+CNL8W2us79cpNbh7h/HEwpjvkmY2Fw8Ya2D+LdSLnuxwvvBIQDqG6EX7HUQ3xGzaJpIyoGfDgG4gCeccBDfZbrclevMMFzo0E19I8gn4eQD9x3vfh0esNpRvNoSM5SEUwx8dgzAfjzgkKP4P7I/INFUiBCXAJzCg8TX5Ci+S7bGJZp1aYhXGyASTWmaCy1qdTjRnE9D/D08oEp2cboEYCGeMEDygM1QeOZD2aszQvYAmswD5uMxlTK+44Sr4GyiH5Ani6DXpTxWmxzPRTZGBwKBQCAQCJBJ/gGJ7JAnPMlNxwAAAABJRU5ErkJggg==">
+                    </picture>
+                    <div class="text">
+                        <h3>Acabamento:</h3>
+                        <p>Detalhamento final do cabelo para um resultado refinado.</p>
+                        <div class="valor">
+                            <strong>R$ 20.00</strong>
+                        </div>
+                    </div>
+                </article>
+                <article class="preco">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVR4nO2Zu0oDQRRAD3YKIiLGNVhYiP/hT1hYihY+8ujtLG30B7Sz9he00lIxuFqJHyAKGrVQVxYmcAk7Iclgcu+QAwPZKZY93LMLm4XhsQAcAA2gCby730fAMkZYAz6AzLO+gX1gDMVsAj8dJDKxzoBxjEtkbp0DUyhiC/jtUSJz6waYRckk+pXI3EqB+WFKbAdIPAIbTiI/vgVK1iQ+gSV3nkTINAYtEyLxJnJKPDJz2u+JE3fRDXf8AJTdeUti/17s/ws7gZMoF0zAN5k7sa9KIutw0QOT2Q2QOHaTSPuUudYg0WtOadt+LnGlQaKfCaSjnAqoxJBTJYacKjE8naox5FSNIafqKCd05FQLmMSLlpxqARKH7rV06E+nWuAkWu/Wo5xCqceQUz2GnFZjeDrNAK/Wc8rZs55Ti0vLOUmeLeck+bKck+TJck6SU8s5SVYs59TtVJrac2pnArhok8j/BV/UnlMRky6Blsi6lZyKmBbfH8zk5COxmJMPkzn5KHXx+UvuqyaxmJMPkzn5MJmTD5M54UFtTn/P4FNKGQk2vgAAAABJRU5ErkJggg==">
+                    </picture>
+                    <div class="text">
+                        <h3>Penteado:</h3>
+                        <p>Escolha do cliente com uma variedade de pomadas e laquês para um estilo único.</p>
+                        <div class="valor">
+                            <strong>R$ 35.00</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button type="button" class="btn-preco">Agendar</button>
+        </div>
+    </section>
+    <section class="container contatos-list">
+        <h2 id="local-contatos">Contatos</h2>
+        <div class="contatos-container">
+            <div class="contatos">
+                <article class="contato">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADVklEQVR4nO2ZW2iPcRjHP9sww+S4OTSEmgsuiKQooiwXCKPEHFZkyZUrhyS5cLhzuOBiF1LTSMIkc0hbiraQREjOOYzNIQybfvVdPf173///P/7v9qP/p3bz3/P+fs/7vr/neb7P80KaNP89I4EyoBK4BTQCDcAOIBvP6QIUA9VAC9Aa8ncZ6I2HZAALgXvG2Y/AEWA5MA7oA8wAnun/dcBAPGIScN3cwH1gHZAbYj/c3PANoCedjDvnO4Efcuo5sEbHKxH5wENddybJayJhAnBbjvwEdgE92rnGaOCN1thDJ1AKfJMD7ohM+Yu1pgLNSgxFdBBdgQMmFvYBOSlYd6PWq6UDyAOuasOvQEkK1+6rdT8TMYXAE232FJiY4gd00qTjyBgPvNZGNco2qWKxCXZX9ScTES4QP2ijswnioVc71h0EnDCxdgEYRkTMBr5oowoFehBZwGZlsXJgSIJ1S6S33LpNqjtOFUTCAuC7NjskZ4Nwx+xKjIb6pBvLCajm54xdFVBAhBSZm9gT52mNBR7L7hWwNOa4uOSwQlpqvXSX+/2dtFekTDXHKV6lnalj4ewuxSSA6UB9iOKtUJYi6uzUqA0Px3kTc1RHWqVsuwXYZAIrdUO/gJvAXDqAQpNij8WJCRs7e6MM0j8h3xS7qpAn7FhiVK5TvF7R1ciOmjjqdZ6EnbPbhocclHMv4+T/WSYmtuMhpUYAug4viGkmi+3GQyaYfsLl+rAE0GDkundkm85uf4hNf+CBbCqVTr1jp+nsgkRgpkRcW6PTHU+PVLOKlKviQWzSTTh5PRQPyTAjm7DAzTWxswxPWSQHXySYdpTLzglA78gC7spBp/8TVfo2QehqiFcUmwlgMoOwLbKv9y1jVcsxN8ZMhhyjv8LqTKeM9lvU2ITNYoNY3RGTjfZQZnqH9pBnxqFeUPmH6XSDrruDJ9yWQ+77RLKM0BDBXTcfT2iSQ24smWzhvKhrjuIRb+WU67WTYa3sXes7AI/YakY2oxLYFpg36GqPd+3seTn3KMEksEp2x/GUHurJWzVUGxNgs8oM0FI5qE45/YBrxlnXxrYxGHjvu+qNfTOn5HCzvhT1Nb+d5h8iSx8uYz/mN/raSCUzrK7VlKQuyo8sadLgF78BcM8G98yji0EAAAAASUVORK5CYII=">
+                    </picture>
+                    <div class="text-contato">
+                        <h3>Ligue para nós</h3>
+                        <div class="complemento-contato">
+                            <p>55(11)1234-56789</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="contato">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjklEQVR4nO2ZPWtUQRSGH79WiGTjRxCN1mrELnYSMa0grkrExmZbQRAS01pItFBBCWIaC0sDQtqsBvwFSWEwNsomFmJUNOrGwrgycAKX4OWemTt35iJ54cDC3nf2PDtz5uvChv5/HQZGgOfAa+CHhPncAK4DhyixjgMvgLYyDGgfJdI2YAz4YwGxFsbzANgaG2IXMO0A8K/e2RmzJ2yGUla8BCoxQMY8QqzF/RiF7VITmprpCwnic0itj0YoiCMFQrQlgqwzI8pkFoALQKdEDZhXeodDgDSUELtTpusFhX8qBMgbRSKmJ9I0qPDPhwBZViRihlKaqgr/cgiQVk6QLoW/FQLkvSIRU9hpuqisscI1rRzjprDXaw+wqNx7Fa57FtPvoNREVXpCA9EG7hSPAWeUyeSJ0yFAdgC/CoRoAR0E0rMCQZ4SUOcLBDkb+lDVLABiUdoOqqECQK4RQWZK/eoR4pus+lF01yPIbSKqB/jpAeI7sI/IuukB5AYlUCfwIQfER6m3UuhqDpArlEgVYM4B4lWIdWMT8DYjkVOJ5/st77rMswMJ/4kMf1Nysla/8h9NXkA/sQB5nPBtAWYVHpOTtR6JedTCsxf4rEhoCei2aHdUfCYn6zH/SczHLL2XFSCXLNvsFd8XYLuNsSbGGfxv8ycd25xx2R1PiMlsDF20P2WILeVYwYekDZObSlU5pa0CB3HXOc9njR7gN7CifSlUlx81N+55NZ6AeOjxLUDd+8MZ6pCFcs7TObyu/ZMPyJBa8Xg26JXwoS7JbVVyTdWwbUFF0IRmIppVXHnGVi1raTjquugEViVrsb4lX5qZpuwaT9s+mV3luxxniljRBDYnQU6WICnXMLlviLLpLxkELOMXeJGeAAAAAElFTkSuQmCC">
+                    </picture>
+                    <div class="text-contato">
+                        <h3>Onde nós encontrar</h3>
+                        <div class="complemento-contato">
+                            <p>rua: exemplo nº 123 Sp/sp</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="contato">
+                    <picture class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADq0lEQVR4nO2ayWtUQRDGf8HojChqxiUe9SgR9Z9wicYtN7ebEi8uRK8uN8XoRQjk71A0qKgE1KhxFzSLgrgdNHgzGqKMFHwPCp2ZvHnT8+YpfvCYpbur++vqrq6qfvAf/y4KwDagB7gEDANfgEk99v2lyqzOVqCFjCAP7AGuAj+BYpXPD+AKsBvINYLAbOAI8NEN6jtwAzgmzazQjM/U06L/rOw4cFNtovYfgG5NTirYBLx2AxgC9gLzE8haAOwDHjh5r4B26gibqT7X4UNgXUD5G4DHTn5vPbSzVAO3Dr4CB4AZMdveAwZj1p0BHAImnLZbCYTlUndRVmdlle2jGa4Gq4ARtRvTGGrCYifwPrAogYwkRJBxuKW2r7UqEiHvltMdYE5COUmJoD7vumWWaM/0ueVkhx0NIGJY6FaFGYCqTWy0savdE6GJRHsmMgBm3WIfdtE5YdaJDBAxHHabP9YSO+rOibgmNg0izcATyTJSFZGTq2CV1xIGoYgYNkrWx+m0sttZCDJIpMlZ0p2VKl5TJfOdskjE0CV5/ZRBQW7194QOYFpEWhTfTJUb53Z1eJ2wCE3EMCCZmymBsyq0eCLrRE5K5plShZdUuOUvILJdMi+UKhxVoUVxIWBR4TlHpEf/hUCbZFpe4A+Mq9B8mxDwJDyZEFgkeZ9LFU6qcFagzj6XIPIpkOycyxPUncjbEkTep0FkPODSsoDsTQkip0hhaY0G2uxLgOeS9UaaMf/tdEBtt1Xa7JH5tQxgLZp45gKyxOHpNOisZH6jA9GSZ7Vq4rl+1wsnKx2I21Ro2cKsauJ3F6WDMs5Y5DRaBjCLmoic28hpnEcZXNGALI0ZF0MpkjDsV3+XqYBdqmS52LgYVP00SDQBjzTGHdMdNO9VcT3ZQ4fG9i7ONUS3Kj8KlHwIhWbgqcZ2ME6DvMv1WkI5K+jWmEaquRRqV6MJJccajTXAN42p6quMXjcDoVx7Ep5RYxrL+SQC8s603q0hiV0L5up+pajPXC2zMeyuFex3WigAt911XM0XPsudam2ZrSadPTGmPs0rXxZKcKtbZhPKvZo5DI1mWadvbjkFP2jzzgAUlVBuD3hi21VGdE5EG7uud+8bnNqjrH1XwrcYCvKdIrejqKUU8rZ4Wu0cdu5MUR6pudcnlHdqk9mepWehLo06VWfA5Qkit+Ngo96AyCkr3q8QoFjlM6XIdEejCJTCfOViLWq7qABr3L1UY99fKDw9o7pl44n/4C/HL07KXY9ffv2xAAAAAElFTkSuQmCC">
+                    </picture>
+                    <div class="text-contato">
+                        <h3>Horários de funcionamento</h3>
+                        <div class="complemento-contato">
+                            <p>seg/sab das 9hs as 19hs</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="contato-form">
+                <h3>Agendamento</h3>
+                <div class="container-form">
+                    <form>
+                        <div class="form-campo">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" placeholder="João Pereira">
+                        </div>
+                        <div class="form-campo">
+                            <label for="servico-form">Serviço:</label>
+                            <input type="text" id="servico-form" name="servicoForm" placeholder="Corte de cabelo completo">
+                        </div>
+                        <div class="form-campo">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11)12345-6789">
+                        </div>
+                        <div class="form-campo">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+                        </div>
+                        <div class="form-campo">
+                            <label for="observacao">Observação:</label>
+                            <textarea id="observacao" name="observacao" placeholder="Exemplo: Gostaria de corta com barbeiro x"></textarea>
+                        </div>
+                        <p>O e-mail pode ser respondido com até 24hrs</p>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+            <p class="footer-text">
+                &copy; 2024 Gentleman BarberShop - Todos os direitos reservados
+            </p>
+            <div class="footer-links">
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaUlEQVR4nO1YS24TQRAdIcEmwFX4LADfAITETyhXwoFV+JwAyGmytCCYsJmqrpqRvSHOAjYMqowlO50oXd01nXGkeVJv/KmqV139Xs8UxYABAwZcGUwmkxuIvA1AewB8AEDHiNxYFgAdL2PtSWzJkaV4AHqFSL+sBYcXHZale9lZ4U3TXAOgt/kLZ39ndiS3mQAAv7vs4nG1G+MOxuZM4D+ItAvAD5l5y9ogZt6SWAD0AZH/+vmccy8MB/bMzCNAfafIBES8Kzm8Xfi5v99cTwjG237ncxQPwE+XRQMAPUHEe/5OANDrhMAnsrbeid0iAxAZVoVyucz90WvelwQC/GM9SFnygxSfCOk8nkugenR6B/gggQAdrQep6/pmNz5xWufhZGxkfLgsS3osn81ms1veCB1FE/ATd+0TIZ1HZX4zAZtP0LhXAhqfSNV5zE0gxSdidB5zE0j1Ca3OY24CFp/Q6DzmJxDvE6v/hnUeL2EHFjE+sQ75rTdCiytFYD6f3/YI/O59hEQq9bGrUe8jhEhfvUP8XhsbgD958T9vhIyKzofiOufub4SMTlojO/SN7CISbfHkvJ2b9mJkArlV+r+T7rbXhmokB7tVnGq0HBu/8/8Qq2ep+c0EBLY3FvTGmr+r6/ROTOFt52mc9Tod+0Ajt0q5mCm6PnWuen5RrFkXDzQpOi+HURRF7jYA/F3Mrl38TaRSvtO8YUCFTwRh0XkrQOETQaTqvBVO6RNBpOi8FS7CJ1TQ6Ly16DrRJ9To4800KnxCjRSdty5Q+EQ09Dpv7vo05BPJOE/nO+j2ItYnBgwYMKDYGPwHE97RVs2v2KMAAAAASUVORK5CYII=">
+                </a>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuElEQVR4nO2ZO07DQBCGlyYdVwBughQCBR3iAFyHE4QgwRFAdPQIeooVJQHPvzOWIqFAFSQUo81DWOCAvY7tjdhf2nZnvnnZHisVFBQU5LVEZAuQU0CIiD8ASao8NLVBgPSYebOU88aYPSJ+q9ppLIZ5BeKOc+SbdB4pCGPMRmGAWdnML3kkkrbWuqUqlta6BcQ7RNz/si8nhS+a1eH8gnYl3v4iC5Gy/6yKKt2wdUQ+OxNfja2KKl2HqiGhjA/LBkiSZC2KzAEgl4AAkBEg74C8zMemtwCDwWAdkOs/ps3YWwBALvKMTOUjQBTxdt6Zr3wEIOLznAAjTwHkYZHDRHwG8LE9RLzvKYB9n8ls2sNKfVgiwDgLIM/DET4A5G3YLAUA/LcMEPFd3pn/s6nlpnEAV+cxOTxcdYD7lQYg4qvGAYjk1hFgBPBR4wArP4WyFAAQMiChhBCaWJLGFluuU0iXXWwRSbSM1aIrABB3UvafXAz3UhHo2wtdMlEUQGvdMibe/bbc7RYGsD8XFn3P1nt46LRen0Yv7jQLwUO7pVZlZOltCu2Ku65fTDSxJV3nyAcFBQWpuvQJv54CWSZAaMcAAAAASUVORK5CYII=">
+                </a>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVR4nO1YS2sUQRAeUBAfFx8ompMhB19ojAfRXyC+Tuoqoghe9exF0YPgRU+KnjW3nNWst0WRQKJXA0uCmarqqpkoGjXRizpSmdll0ibZnnHN7up80DAM/VXV1139Ks8rUKBAgQIFFgGA7ELk80R8HVEeEMkAojxDlBeI8pqIx4mYieRDrSHyJyKJ0i35V+8Tc3gcUV4hynO1mdi+H/vic+rbywsi2qvG7UBa0EaIqDdP8DNtEHwUz57MIIZ7nAW0ychH9kw4Bc/MO6zc/Ukkg4hy2xi5RCQlAD5EFBwwxvT5ftBda8aYDb7vr9VWrVZX1Gzqd+1/3GcOp09txTbltPpQX0RSTnzXY9HYHNJHSpbyQa9FIJKyFcuphiREuWHl302vRSDiW3MF8DUHkvRbqi94LYIxctGK5VHmaUPkw0sS7TwgkmOWgCcOJB6yUmh/Rqf9ANCVhbMQdHFbg/nSawREGU2TjDHbsjmddTRNxFcBYKX3B2Dm7dZgvnEIgE2aJCJbswpIjdhbRD6RV4DvB91WClFDEqK8T5MmJiY35xWQapXM1wFPBbzbYs3ApIMA/pwm6eHTBAE6Gz90FwmCYJO7LVpvbaNTLgF8s9bAqmYISAn5omdN+qReCCKy2uJ/9RohGak6KYqiZV4GuN9tuEokJxezFUXRckv893YTcLTpAv52ChHJR0S54pJCYRiuyZNCcxYxAKzrqEWMbbSNAkBX5m30XzjIRjv9KjHU0Zc5InlqCTjitQhEwXFrET/u9AfNw4YkLSp1+pOy1NGPep6/rFJGlDta8jAmOKPPTKLwIDPvAwh7aiUSEdnYqKwS94n7A4Q9akNtqU21DSCX1VdcvsxRVkmUj7jfaZasDWeYOuptr9IiTyMGu50F1ES0yUwMZw4+DS1xA5izugMg8j0tgSdnRSWuofIYooBVOp/6PZDZf6kSvHJ4LKnDVhKbA4h8V32pT9+XnbkDL1CgQIEC/wV+ATpbUysPAgKAAAAAAElFTkSuQmCC">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+</body>
+</html>
